@@ -4,9 +4,13 @@ START_POS = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE = 280
 
-class Player(Turtle):
-    pass
 
-        def __init__(self):
-            super().__init__()
-            pass
+class TurtlePlayer(Turtle):
+
+    def __init__(self):
+        super().__init__()
+        self.shape("turtle")
+        self.color("#19310D")
+        self.penup()
+        self.goto(START_POS)
+        self.setheading(90)
