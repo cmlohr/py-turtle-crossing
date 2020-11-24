@@ -19,7 +19,7 @@ class Plants(Turtle):
 
     def grow(self, position):
         bush = Turtle(shape="circle")
-        bush.color("#214111")
+        bush.color("#19310D")
         bush.penup()
         bush.shapesize(stretch_wid=2, stretch_len=2)
         bush.goto(position)

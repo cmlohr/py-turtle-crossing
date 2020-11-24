@@ -3,6 +3,7 @@ from turtle import Turtle
 START_POS = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE = 280
+UP = 90
 
 
 class TurtlePlayer(Turtle):
@@ -10,7 +11,14 @@ class TurtlePlayer(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("turtle")
-        self.color("#19310D")
+        self.color("#21FA90")
         self.penup()
         self.goto(START_POS)
-        self.setheading(90)
+        self.setheading(UP)
+
+    def up(self):
+        self.forward(MOVE_DISTANCE)
+
+    def reset(self):
+        self.goto(START_POS)
+
