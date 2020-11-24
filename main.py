@@ -4,7 +4,7 @@ from cars import CarManager
 from score import Score
 import time
 from art import Art
-from plants import Plants
+
 
 screen = Screen()
 screen.tracer(0)
@@ -13,7 +13,6 @@ screen.setup(width=600, height=600)
 screen.title("Turtle Crossing")
 
 art = Art()
-plants = Plants()
 cars = CarManager()
 player = TurtlePlayer()
 score = Score()
@@ -29,7 +28,7 @@ while game_on:
     cars.make_car()
     cars.move_cars()
     for car in cars.all_cars:
-        if car.distance(player) < 18:
+        if car.distance(player) < 20:
             score.game_over()
             game_on = False
 

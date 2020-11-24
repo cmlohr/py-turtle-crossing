@@ -11,7 +11,7 @@ class TurtlePlayer(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("turtle")
-        self.color("#21FA90")
+        self.color("#FF6600")
         self.penup()
         self.goto(START_POS)
         self.setheading(UP)

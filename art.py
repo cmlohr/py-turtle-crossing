@@ -9,7 +9,7 @@ class Art:
     def pave(self):
         berm = Turtle()
         berm.shape("square")
-        berm.color("#E31556")
+        berm.color("#6FF584")
         berm.penup()
         berm.shapesize(stretch_wid=25, stretch_len=30)
         berm.goto(0, 0)
@@ -30,14 +30,14 @@ class Art:
 
         center_lines1 = Turtle()
         center_lines1.shape("square")
-        center_lines1.color("#BC2BFF")
+        center_lines1.color("#62EFFF")
         center_lines1.penup()
-        center_lines1.shapesize(stretch_wid=.2, stretch_len=30)
+        center_lines1.shapesize(stretch_wid=.1, stretch_len=30)
         center_lines1.goto(0, -100)
 
         center_lines2 = Turtle()
         center_lines2.shape("square")
-        center_lines2.color("#BC2BFF")
+        center_lines2.color("#62EFFF")
         center_lines2.penup()
-        center_lines2.shapesize(stretch_wid=.2, stretch_len=30)
+        center_lines2.shapesize(stretch_wid=.1, stretch_len=30)
         center_lines2.goto(0, 100)
